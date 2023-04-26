@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+body{
+    background-color: #242436;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 10px black;
+}
+
+#logoandmenu{
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+#logo{
+    border-left: 1px solid gray;
+    padding-left: 15px;
+}
+
+#menu{
+    padding-right: 15px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+
+#menu:hover{
+    color: white;
+    cursor: pointer;
+}
+
+ion-icon{
+    color: #cd1835;
+}
+
+.iconnav{
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.iconnav:hover{
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+    margin-top: -50px;
+}
+
+header nav a{
+    display: flex;
+    align-items: center;
+    color: #cd1835;
+    text-decoration: none;
+    padding-left: 30px;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+
+
+input{
+    background-color: #34344b;
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+#searchbar{
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+#perfil{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: -40px;
+    margin-right: 3%;
+}
+
+#perfil img{
+    border-radius: 50%;
+}
+

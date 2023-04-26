@@ -1,0 +1,2 @@
+Red = #cd1835
+Background = #242436
