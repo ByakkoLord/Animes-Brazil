@@ -90,9 +90,68 @@ input{
     margin-right: 20px;
     margin-top: -40px;
     margin-right: 3%;
+    cursor: pointer;
 }
 
 #perfil img{
     border-radius: 50%;
+    transition: all 0.1s;
 }
 
+#perfil img:hover{
+    border: 3px solid white;
+}
+
+main{
+
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 1000px;
+}
+
+#content{
+    border-top: 3px solid white;
+    margin-top: 20px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+}
+
+#container{
+    width: 265px;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    height: 210px;
+}
+
+#container figure img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 265px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#container figure img:hover{
+    width: 280px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 0 20px black;
+
+}
+
+figcaption{
+    padding-left: 10px;
+}
+
+
+#borning{
+    border: 3px solid white;
+    border-radius: 25px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    margin-left: 380px;
+    width: 200px;
+}
