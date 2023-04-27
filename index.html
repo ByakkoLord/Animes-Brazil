@@ -161,6 +161,29 @@
                 <span id="Eps"></span>
             </div>
         </article>
+
+        <div id="backtop">
+            <a id="top"></a>
+            <button onclick="voltarAoTopo()" id="botao-topo"><img width="150px" src="Images/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvam9iNjg2LTAzNC14LmpwZw.png" alt=""></button>
+            <script>
+                function voltarAoTopo() {
+  const posicaoAtual = window.pageYOffset;
+  if (posicaoAtual > 0) {
+    window.requestAnimationFrame(voltarAoTopo);
+    window.scrollTo(0, posicaoAtual - posicaoAtual / 10);
+  }
+}
+
+                window.addEventListener("scroll", function() {
+                  const botaoTopo = document.querySelector("#botao-topo");
+                  if (window.pageYOffset > 100) {
+                    botaoTopo.style.display = "block";
+                  } else {
+                    botaoTopo.style.display = "none";
+                  }
+                });
+                </script>
+        </div>
     </main>
 
     <footer>
