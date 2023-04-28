@@ -104,8 +104,7 @@ input{
 
 main{
 
-    margin-top: 50px;
-    margin-left: 10%;
+    margin: 20px auto;
     width: 1000px;
 }
 
@@ -156,17 +155,58 @@ figcaption{
     width: 200px;
 }
 
-button#botao-topo {
+#botao-topo{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #55555500;
-    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 222, 173, 0);
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-  }
+    border: none;
+    z-index: 2;
+}
+
+.mycanva{
+    position: fixed;
+    top: 77%;
+    left: 90%;
+    height: 350px;
+    width: 100px;
+    
+
+}
+
+.ball{
+    background-color: #ff1a66;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    animation: bounce 0.9s infinite;
+}
+
+@keyframes bounce{
+    10%{
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 50px;
+    }
+    50%{
+        top: 100px;
+        height: 30px;
+        width: 57px;
+    }
+    75%{
+        height: 50px;
+        width: 50px;
+    }
+    100%{
+        top: 10px;
+        transform: translateY(0px);
+    }
+}
